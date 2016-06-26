@@ -1,4 +1,4 @@
-# React ES6 Webpack Boilerplate
+# React Tutorial Client
 
 Boilerplate for kick starting a project with the following technologies:
 * [React](https://github.com/facebook/react)
