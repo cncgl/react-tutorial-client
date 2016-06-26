@@ -1,12 +1,12 @@
 /**
  * Created by shigeru on 16/06/26.
  */
-import React from "react";
-import marked from "marked";
+import React from 'react';
+import marked from 'marked';
 
 export default class Comment extends React.Component {
   rawMarkup() {
-    var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
+    const rawMarkup = marked(this.props.children.toString(), {sanitize: true});
     return { __html: rawMarkup};
   }
 
@@ -21,3 +21,5 @@ export default class Comment extends React.Component {
     );
   }
 }
+Comment.propTypes = { author: React.PropTypes.string.isRequired };
+Comment.propTypes = { children: React.PropTypes.string };

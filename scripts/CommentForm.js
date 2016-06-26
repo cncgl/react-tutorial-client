@@ -23,7 +23,6 @@ export default class CommentForm extends React.Component {
     const text = this.state.text.trim();
     if( !text || !author) { return; }
 
-    // サーバーに送信
     this.props.onCommentSubmit({author: author, text: text});
     this.setState({author: '', text: ''});
   }
@@ -43,3 +42,4 @@ export default class CommentForm extends React.Component {
     );
   }
 }
+//CommentForm.propTypes = { onCommentSubmit: React.PropTypes.function };
