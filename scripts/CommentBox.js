@@ -29,8 +29,8 @@ export default class CommentBox extends React.Component {
         console.log('json', json);
         this.setState({data: json});
       }).catch((ex)=>{
-      console.log('err', ex);
-    });
+        console.log('err', ex);
+      });
     // this.loadCommentsFromserver.bind(this);
     //setInterval(this.loadCommentsFromserver.bind(this), this.props.pollInterval);
   }
@@ -51,7 +51,7 @@ export default class CommentBox extends React.Component {
         this.setState({data: newComments});
       }).catch((ex)=>{
         console.log('err', ex);
-    });
+      });
   }
 
   render() {

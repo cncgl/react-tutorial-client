@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import CommentBox from './CommentBox';
 
 ReactDOM.render(
-  <CommentBox url="http://localhost:3000/comments" pollInterval={2000} />,
+  <CommentBox url="http://api.localhost.local:3000/v1/comments" pollInterval={2000} />,
   document.getElementById('root')
 );
